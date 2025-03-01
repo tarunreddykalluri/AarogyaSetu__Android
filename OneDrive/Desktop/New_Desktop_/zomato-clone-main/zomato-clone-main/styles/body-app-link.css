@@ -1,0 +1,132 @@
+.body-app-link {
+    max-width: 50rem;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    height: auto;
+    padding: 5rem 1rem 5rem 1rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.app-link-image-container {
+    display: grid;
+    place-content: center;
+}
+
+.app-link-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.app-link-text {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-link-header {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.app-link-des {
+    color: rgb(71, 70, 70);
+    font-size: 0.9rem;
+}
+
+.email-phone {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.email-radio, .phone-radio {
+    margin-right: 0.5rem;
+}
+
+.email-text {
+    margin-right: 1rem;
+}
+
+.share-link {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    height: 3rem;
+    border: none;
+}
+
+.share-link ::placeholder {
+    font-size: 1rem;
+    padding-left: 0.3rem;
+}
+
+.share-link :focus {
+    outline: 1px solid orange;
+}
+
+.via-email {
+    max-width: 20rem;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.via-phone {
+    display: none;
+}
+
+.share-button {
+    width: 5rem;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.app-stores {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.google-store {
+    height: 2.5rem;
+}
+
+.apple-store {
+    height: 2.5rem;
+}
+
+@media (max-width: 40rem) {
+
+    .body-app-link {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .app-link-image-container {
+        display: none;
+    }
+
+    .app-link-text {
+        gap: 1.5rem;
+    }
+    .app-link-header {
+        font-size: 2rem;
+    }
+
+    .share-link {
+        height: 2rem;
+    }
+
+    .google-store, .apple-store {
+        height: 2rem;
+    }
+}
+

@@ -1,0 +1,127 @@
+.body-collections {
+    font-family: 'Poppins', sans-serif;
+    max-width: 70rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.13rem;
+    color: rgb(74, 64, 64);
+    font-weight: normal;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 0.8rem;   
+}
+
+.collections-info {
+    color: red;
+
+    display: grid;
+    grid-template-columns: 1fr 1rem;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.collections-info  span {
+    text-align: end;
+}
+
+.popular-places {
+    height: 20rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.8rem;
+}
+
+.popular-places > a {
+    color: white;
+    text-decoration: none;
+}
+
+.popular-places > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.popular-places > a > div > div {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.popular-places > a > div > div > p {
+    font-weight: 600;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 1rem;
+}
+
+.no-of-places {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 50rem) {
+    .popular-places {
+        height: 30rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.8rem;
+        row-gap: 0.8rem;
+    }
+}
+@media (max-width: 40rem) {
+    .description {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .collections-info {
+        grid-template-columns: 12.7rem 1rem;
+        justify-content: start;
+        column-gap: 0;
+    }
+
+    .collections-info span {
+        text-align: start;
+    }
+
+}
+
+@media (max-width: 30rem) {
+    .popular-places {
+        height: 30rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.8rem;
+        row-gap: 0.8rem;
+    }
+}
+
+@media (max-width: 20rem) {
+    .popular-places {
+        height: 40rem;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0.8rem;
+        row-gap: 0.8rem;
+    }
+}

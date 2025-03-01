@@ -1,0 +1,82 @@
+.footer-body {
+    font-family: "Poppins", sans-serif;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding-bottom: 1.5rem;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.enterprise {
+    margin-top: 1rem;
+}
+
+.footer-body b {
+    letter-spacing: 0.1rem;
+}
+
+.ftr-bdy-clm-1, .ftr-bdy-clm-2, 
+.ftr-bdy-clm-3, .ftr-bdy-clm-4,
+.ftr-bdy-clm-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.ftr-bdy-clm-1 a, .ftr-bdy-clm-2 a,
+ .ftr-bdy-clm-3 a, .ftr-bdy-clm-4 a {
+  
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.ftr-bdy-clm-5 a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.apple-store, .google-store {
+    height: 2rem;
+}
+
+@media (max-width: 50rem) {
+    .footer-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 38rem) {
+    .footer-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+}
+
+
+@media (max-width: 20rem) {
+    .footer-body {
+        padding-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+    }
+}

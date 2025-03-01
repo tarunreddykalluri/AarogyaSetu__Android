@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("../data/images/hero-image.avif");
+    min-height: 27rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+header nav a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    max-width: 69rem;
+    margin: auto;
+    font-weight: lighter;
+    height: 1.8rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.hamburger-menu {
+    visibility: hidden;
+}
+
+.nav-right-container, .profile-section-container {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-right-container {
+    gap: 1.8rem;
+}
+
+.profile-section-container {
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+a .profile-image {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 50rem) {
+    .get-the-app-text {
+        display: none; 
+    }
+
+    .nav-right-container{
+        display: none; 
+    }
+
+    .hamburger-menu {
+        visibility: visible;
+    }
+}
+
+.header-bottom-container {
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+
+}
+
+.zomato-logo {
+    width: 20rem;
+    height: 4rem;
+}
+
+.service-area-text {
+    font-size: 2.3rem;
+    color: white;
+    word-spacing: 0.2rem;
+    text-align-last: center;
+}
+
+@media (max-width: 25rem) {
+    .service-area-text {
+        font-size: 1rem;
+    }
+}
+
+.location-search-bar {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
+    align-items: center;
+    background-color: white;
+}
+
+.location {
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    align-items: center;  
+    border-right: 2px solid gray; 
+}
+
+.location i:first-child {
+    color: rgb(231, 103, 103);
+}
+
+.location-info  {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 0 0.5rem;
+    white-space: nowrap;
+}
+
+.search-bar {
+    margin-left: 1rem;
+
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+}
+
+.search-bar i {
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.search-bar input:focus {
+    border: none;
+}
+
+.search-bar input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+

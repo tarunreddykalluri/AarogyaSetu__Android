@@ -1,0 +1,49 @@
+.body-explore-options {
+    max-width: 70rem;
+    margin: auto;
+    padding: 1rem;
+    font-family: "Poppins",sans-serif;
+}
+
+.body-explore-options b {
+    font-size: 2rem;
+}
+
+.explore-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.explore-options > div {
+    padding: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0.5px solid rgb(0, 0, 0, 0.15);
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.near-me {
+    font-size: 1.1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1rem;
+    align-items: center;
+}
+
+.near-me i {
+    font-size: 0.9rem;
+}
+
+.top-res-chains, .we-deliver-to {
+    color: gray;
+    font-size: 0.9rem;
+}
+.cuisines-near-me, .restypes-near-me {
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 2.5rem;
+    text-align: justify;
+}
